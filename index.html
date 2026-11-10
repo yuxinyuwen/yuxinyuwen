@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宇昕的作文展台</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: #f7f4ef;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #6b8e6b, #4a6b4a);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 36px; margin-bottom: 12px; letter-spacing: 2px; }
+    header p { font-size: 16px; opacity: 0.9; }
+    nav {
+      background: #fff;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 14px;
+      text-decoration: none;
+      color: #4a6b4a;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    nav a:hover { color: #6b8e6b; }
+    main { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    section { margin-bottom: 56px; }
+    h2 {
+      font-size: 24px;
+      color: #4a6b4a;
+      margin-bottom: 24px;
+      padding-left: 12px;
+      border-left: 5px solid #6b8e6b;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .card h3 { color: #2c2c2c; font-size: 18px; margin-bottom: 10px; }
+    .card .meta { font-size: 13px; color: #888; margin-bottom: 12px; }
+    .card p { font-size: 14px; color: #555; }
+    .standard-list { list-style: none; }
+    .standard-list li {
+      background: #fff;
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .standard-list strong { color: #4a6b4a; }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 28px;
+      background: #6b8e6b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #4a6b4a; }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #999;
+      font-size: 13px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>宇昕的作文展台</h1>
+    <p>记录文字 · 分享思考 · 一起写好作文</p>
+  </header>
+
+  <nav>
+    <a href="#essays">作文展示</a>
+    <a href="#standards">优秀标准</a>
+    <a href="#submit">投稿入口</a>
+  </nav>
+
+  <main>
+
+    <section id="essays">
+      <h2>精选作文</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>春天的第一场雨</h3>
+          <div class="meta">作者：宇昕 · 七年级</div>
+          <p>雨滴敲在窗上，像谁在轻轻叩门。我放下笔，看见院子里那棵老树……</p>
+        </div>
+        <div class="card">
+          <h3>那盏灯</h3>
+          <div class="meta">作者：宇昕 · 七年级</div>
+          <p>每晚回家，巷口那盏路灯总是亮着。后来我才知道，是邻居奶奶……</p>
+        </div>
+        <div class="card">
+          <h3>给未来的自己</h3>
+          <div class="meta">作者：宇昕 · 七年级</div>
+          <p>十年后的你，还记得今天写下的这句话吗？我想告诉你……</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="standards">
+      <h2>优秀作文标准</h2>
+      <ul class="standard-list">
+        <li><strong>立意：</strong>主题明确，有真实感受，不空喊口号。</li>
+        <li><strong>结构：</strong>开头、主体、结尾清晰，段落之间有逻辑。</li>
+        <li><strong>语言：</strong>用词准确，句子通顺，有细节和画面感。</li>
+        <li><strong>细节：</strong>能写出具体的场景、动作、对话和心理。</li>
+        <li><strong>规范：</strong>标点正确，书写工整，无错别字。</li>
+      </ul>
+    </section>
+
+    <section id="submit">
+      <h2>投稿入口</h2>
+      <p>同学可以把自己的作文提交到这里，审核后会在展台展示。</p>
+      <a class="btn" href="#">我要投稿（下一步添加）</a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 宇昕的作文展台 · 语文心 语文课
+  </footer>
+
+</body>
+</html>
